@@ -1,1 +1,3 @@
-# ocelot-api-gateway
+# Api Gateway Using Ocelot
+Ocelot is an open-source API Gateway designed for .NET applications, particularly those using microservices or service-oriented architecture. It acts as a unified entry point for your system, managing requests and responses between clients and backend services. Ocelot offers features like routing, request aggregation, authentication, authorization, rate limiting, caching, and load balancing.
+It's built to work seamlessly with ASP.NET Core and supports integration with IdentityServer for handling tokens. Ocelot is highly configurable, allowing you to tailor it to your specific needs
