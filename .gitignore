@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DemoOcelot/.vs
+/DemoOcelot/ApiGateway/obj
+/DemoOcelot/ApiGateway/bin/Debug/net8.0
+/DemoOcelot/bin/Debug
+/DemoOcelot/BooksApi/bin/Debug/net8.0
+/DemoOcelot/BooksApi/obj
+/DemoOcelot/obj
+/DemoOcelot/UsersApi/bin/Debug/net8.0
+/DemoOcelot/UsersApi/obj
+*.sln
