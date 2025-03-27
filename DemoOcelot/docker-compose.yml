@@ -1,0 +1,32 @@
+networks:
+  backend:
+
+services:
+  apigateway:
+    container_name: ocelot-api-gateway
+    image: ${DOCKER_REGISTRY-}api-gateway
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+    ports:
+      - 9000:8080
+    networks:
+      - backend
+
+  bookservice:
+    container_name: books-service-api
+    image: ${DOCKER_REGISTRY-}books-api
+    build:
+      context: .
+      dockerfile: BooksApi/Dockerfile
+    networks:
+      - backend
+
+  userservice:
+    container_name: users-service-api
+    image: ${DOCKER_REGISTRY-}users-api
+    build:
+      context: .
+      dockerfile: UsersApi/Dockerfile
+    networks:
+      - backend
